@@ -5,7 +5,7 @@ const Hero = () => {
     { src: "/images/image1.svg", alt: "Image 1" },
     { src: "/images/image2.svg", alt: "Image 2" },
     { src: "/images/image3.svg", alt: "Image 3" },
-    { src: "/images/card1/image4.svg", alt: "Image 4" },
+    { src: "/images/image4.svg", alt: "Image 4" },
     { src: "/images/image5.svg", alt: "Image 5" },
     { src: "/images/image6.svg", alt: "Image 6" },
   ];
