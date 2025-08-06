@@ -2,6 +2,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ComingSoon from "./ComingSoon";
 import { useMaskSettings } from "../../constants";
+import HeroOne from "../components/HeroOne";
 
 const Hero = () => {
   const { initialMaskPos, initialMaskSize, maskPos, maskSize } =
@@ -76,24 +77,17 @@ const Hero = () => {
   return (
     <section className="hero-section">
       <div className="size-full mask-wrapper">
-        <img
-          src="/images/hero-bg.webp"
-          alt="background"
-          className="scale-out"
-        />
-        <img
-          src="/images/hero-text.webp"
-          alt="hero-logo"
-          className="title-logo fade-out"
-        />
-        <img
+        <HeroOne className="scale-out" />
+
+        {/* <img src="/images/hero-text.webp" alt="hero-logo" /> */}
+        {/* <img
           src="/images/watch-trailer.png"
           alt="trailer"
           className="trailer-logo fade-out"
-        />
-        <div className="play-img fade-out">
+        /> */}
+        {/* <div className="play-img fade-out">
           <img src="/images/play.png" alt="play" className="w-7 ml-1" />
-        </div>
+        </div> */}
       </div>
       <div>
         <img
