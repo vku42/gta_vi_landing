@@ -11,7 +11,7 @@ const Hero = () => {
   ];
 
   return (
-    <div className="pt-24 px-4 sm:px-6 lg:px-8">
+    <div className="pt-24 px-4 sm:px-6 lg:px-8 bg-[url('/images/bg.svg')] bg-cover bg-center h-screen w-full ">
       {/* Heading Section */}
       {/* Carousel */}
       <div className="mt-1">
