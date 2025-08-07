@@ -2,7 +2,7 @@ import React from "react";
 
 const ComingSoon = () => {
   return (
-    <section className="entrance-message">
+    <section className="entrance-message pointer-events-none">
       <div className="h-full col-center gap-10">
         <img
           src="/images/kanya_karrt_logo.png"

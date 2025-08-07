@@ -44,6 +44,7 @@ const Hero = () => {
         ".mask-wrapper",
         {
           maskSize: maskSize,
+          maskPosition: maskPos,
           ease: "power1.inOut",
         },
         "<"
@@ -63,20 +64,16 @@ const Hero = () => {
         },
         "<"
       )
-      .to(
-        ".entrance-message",
-        {
-          duration: 1,
-          ease: "power1.inOut",
-          maskImage:
-            "radial-gradient(circle at 50% 0vh, black 50%, transparent 100%)",
-        },
-        "<"
-      );
+      .to(".entrance-message", {
+        duration: 1,
+        ease: "power1.inOut",
+        maskImage:
+          "radial-gradient(circle at 50% 0vh, black 50%, transparent 100%)",
+      });
   });
   return (
     <section className="hero-section">
-      <div className="size-full mask-wrapper">
+      <div className="size-full mask-wrapper ">
         <HeroOne className="scale-out" />
 
         {/* <img src="/images/hero-text.webp" alt="hero-logo" /> */}
@@ -89,17 +86,18 @@ const Hero = () => {
           <img src="/images/play.png" alt="play" className="w-7 ml-1" />
         </div> */}
       </div>
-      <div>
+      {/* <div className="pointer-events-none">
         <img
           src="/images/big-hero-text.svg"
           alt="logo"
           className="size-full object-cover mask-logo"
         />
-      </div>
+      </div> */}
 
-      <div className="fake-logo-wrapper">
+      <div className="fake-logo-wrapper ">
         <img src="/images/big-hero-text.svg" className="overlay-logo" />
       </div>
+
       <ComingSoon />
     </section>
   );

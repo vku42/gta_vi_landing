@@ -29,11 +29,19 @@ export const CardCarousel = ({
       background-position: center;
       background-size: cover;
       width: 260px;
+      filter: blur(2px);                  
+      transform: scale(0.9);              
+      transition: filter 0.3s ease, transform 0.3s ease;
     }
+
+    .swiper-slide-active {
+      filter: blur(0);                    
+      transform: scale(1);                
+      z-index: 10;
+  }
     
     .swiper-slide img {
-      display: block;
-      width: 100%;
+    z-index: 10;
     }
 
     .swiper-3d .swiper-slide-shadow-left {
@@ -45,14 +53,14 @@ export const CardCarousel = ({
   `;
 
   return (
-    <section className="w-ace-y-4 mt-1">
+    <section className="w-ace-y-4 mt-5">
       <style>{css}</style>
-      <div className="mx-auto w-full max-w-6xl">
+      <div className="mx-auto w-full max-w-7xl">
         <div className="relative mx-auto flex w-full flex-col md:items-center md:gap-8 md:p-2">
           <div className="flex w-full items-center justify-center gap-4">
             <div className="w-full">
               <Swiper
-                spaceBetween={80}
+                spaceBetween={150}
                 autoplay={{
                   delay: autoplayDelay,
                   disableOnInteraction: false,
@@ -81,7 +89,7 @@ export const CardCarousel = ({
               >
                 {images.map((image, index) => (
                   <SwiperSlide key={index}>
-                    <div className="w-[280px] h-[420px]">
+                    <div className="w-[340px] h-[480px]">
                       <img
                         src={image.src}
                         className="w-full h-full object-cover rounded-sm"
@@ -92,7 +100,7 @@ export const CardCarousel = ({
                 ))}
                 {images.map((image, index) => (
                   <SwiperSlide key={`duplicate-${index}`}>
-                    <div className="w-[280px] h-[420px]">
+                    <div className="w-[300px] h-[480px]">
                       <img
                         src={image.src}
                         className="w-full h-full object-cover rounded-sm"
