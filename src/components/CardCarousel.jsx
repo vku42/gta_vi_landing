@@ -15,7 +15,7 @@ import {
 
 export const CardCarousel = ({
   images,
-  autoplayDelay = 1500,
+  autoplayDelay = 1000,
   showPagination = true,
   showNavigation = true,
 }) => {
@@ -58,9 +58,19 @@ export const CardCarousel = ({
       <div className="mx-auto w-full max-w-8xl">
         <div className="relative mx-auto flex w-full flex-col md:items-center md:gap-8 md:p-2">
           <div className="flex w-full items-center justify-center gap-4">
-            <div className="w-full">
+            <div className="w-full select-none">
               <Swiper
-                spaceBetween={150}
+                breakpoints={{
+                  0: {
+                    spaceBetween: 20,
+                  },
+                  768: {
+                    spaceBetween: 100,
+                  },
+                  1024: {
+                    spaceBetween: 150,
+                  },
+                }}
                 autoplay={{
                   delay: autoplayDelay,
                   disableOnInteraction: false,
@@ -89,7 +99,7 @@ export const CardCarousel = ({
               >
                 {images.map((image, index) => (
                   <SwiperSlide key={index}>
-                    <div className="w-[320px] h-[480px]">
+                    <div className="w-[280px] h-[440px] md:w-[320px] md:h-[480px]">
                       <img
                         src={image.src}
                         className="w-full h-full object-cover rounded-sm"
@@ -100,7 +110,7 @@ export const CardCarousel = ({
                 ))}
                 {images.map((image, index) => (
                   <SwiperSlide key={`duplicate-${index}`}>
-                    <div className="w-[300px] h-[480px]">
+                    <div className="w-[280px] h-[440px] md:w-[320px] md:h-[480px]">
                       <img
                         src={image.src}
                         className="w-full h-full object-cover rounded-sm"

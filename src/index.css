@@ -95,7 +95,7 @@ main {
     }
 
     .text-wrapper {
-      @apply mt-40 md:mt-60 2xl:mt-44 3xl:top-48;
+      @apply mt-10;
     }
   }
   .jason {
