@@ -33,7 +33,6 @@ const Hero = () => {
           showNavigation={false}
         />
       </div>
-      \
     </div>
   );
 };

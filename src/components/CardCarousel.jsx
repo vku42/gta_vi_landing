@@ -55,7 +55,7 @@ export const CardCarousel = ({
   return (
     <section className="w-ace-y-4 mt-5">
       <style>{css}</style>
-      <div className="mx-auto w-full max-w-7xl">
+      <div className="mx-auto w-full max-w-8xl">
         <div className="relative mx-auto flex w-full flex-col md:items-center md:gap-8 md:p-2">
           <div className="flex w-full items-center justify-center gap-4">
             <div className="w-full">
@@ -89,7 +89,7 @@ export const CardCarousel = ({
               >
                 {images.map((image, index) => (
                   <SwiperSlide key={index}>
-                    <div className="w-[340px] h-[480px]">
+                    <div className="w-[320px] h-[480px]">
                       <img
                         src={image.src}
                         className="w-full h-full object-cover rounded-sm"
