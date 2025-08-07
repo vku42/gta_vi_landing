@@ -3,10 +3,10 @@ import React from "react";
 const ComingSoon = () => {
   return (
     <section className="entrance-message pointer-events-none">
-      <div className="h-full col-center gap-10">
+      <div className="h-full col-center gap-10 ">
         <div className="text-wrapper text-xl text-center">
           <h1 className="text-3xl text-[#fafafa]">About Us</h1>
-          <p className="max-w-4xl text-[#fafafa]">
+          <p className="max-w-4xl text-[#fafafa] p-2">
             At Kanya Kart, we craft ethnic fashion for the modern woman. Rooted
             in tradition, designed for today — our collections blend heritage
             aesthetics with contemporary silhouettes. We believe fashion should
