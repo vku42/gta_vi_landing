@@ -4,7 +4,7 @@ import { useGSAP } from "@gsap/react";
 
 const Jason = () => {
   useGSAP(() => {
-    gsap.set(".jason", { marginTop: "-70vh" });
+    gsap.set(".jason", {});
 
     gsap
       .timeline({
@@ -37,45 +37,26 @@ const Jason = () => {
   return (
     <section className="jason">
       <div className="max-w-lg jason-content ">
-        <h1>Why Kanya Kart?</h1>
-        <h2>
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
+          Why Kanya Kart?
+        </h1>
+        <h2 className="text-slate-600">
           At Kanya Kart, we’re more than just an ethnic wear brand – we’re your
           growth partner in fashion retail.
         </h2>
-        <ul>
-          <li>
-            <strong>Unique & Trendy Designs</strong> – We bring you styles that
-            blend cultural charm with modern appeal.
-          </li>
-          <li>
-            <strong>Premium Quality Assurance</strong> – Every piece is crafted
-            with care, ensuring durability and comfort.
-          </li>
-          <li>
-            <strong>Affordable Wholesale Pricing</strong> – Designer looks at
-            prices that help you maximize profits.
-          </li>
-          <li>
-            <strong>Fast & Secure Delivery</strong> – Nationwide and
-            international shipping you can count on.
-          </li>
-          <li>
-            <strong>Consistent New Collections</strong> – Keep your store fresh
-            with regular launches.
-          </li>
-          <li>
-            <strong>Strong Retailer Support</strong> – From product photos to
-            marketing tips, we help you sell more.
-          </li>
-          <li>
-            <strong>Trusted by Hundreds of Retailers</strong> – A proven name in
-            the ethnic wear industry.
-          </li>
-        </ul>
+        <p>
+          Kanya Kart is your destination for elegant ethnic wear that blends
+          tradition with modern style. We create beautifully crafted salwar
+          suits, kurtis, and more – designed for comfort, quality, and timeless
+          appeal. Every piece is made to empower women with confidence and
+          style, whether for daily wear or special celebrations. Kanya Kart –
+          Where Tradition Meets Today.
+        </p>
       </div>
+
       <div className="space-y-5 sm:mt-30 md:mt-45 mt-55 img-box px-2 ">
         <div className="jason-1">
-          <img src="/images/kanya-img-1.png" alt="" />
+          <img src="/images/kanya-img-2.png" alt="" />
         </div>
       </div>
     </section>

@@ -68,33 +68,16 @@ const Hero = () => {
         duration: 1,
         ease: "power1.inOut",
         maskImage:
-          "radial-gradient(circle at 50% 0vh, black 50%, transparent 100%)",
+          "radial-gradient(circle at 80% 0vh, black 80%, transparent 100%)",
       });
   });
   return (
-    <section className="hero-section h-screen w-full ">
-      <div className="size-full mask-wrapper bg-[url('/images/bg.svg')] bg-cover bg-center h-screen w-full  ">
+    <section className="hero-section bg-[#0f0f0f10]  ">
+      <div className="size-full mask-wrapper bg-[url('/images/bg.svg')] bg-cover bg-center h-screen w-full   ">
         <HeroOne className="scale-out" />
-
-        {/* <img src="/images/hero-text.webp" alt="hero-logo" /> */}
-        {/* <img
-          src="/images/watch-trailer.png"
-          alt="trailer"
-          className="trailer-logo fade-out"
-        /> */}
-        {/* <div className="play-img fade-out">
-          <img src="/images/play.png" alt="play" className="w-7 ml-1" />
-        </div> */}
       </div>
-      {/* <div className="pointer-events-none">
-        <img
-          src="/images/big-hero-text.svg"
-          alt="logo"
-          className="size-full object-cover mask-logo"
-        />
-      </div> */}
 
-      <div className="fake-logo-wrapper pointer-events-none  ">
+      <div className="fake-logo-wrapper pointer-events-none   ">
         <img src="/images/big-hero-text.svg" className="overlay-logo" />
       </div>
 
