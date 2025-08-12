@@ -2,7 +2,7 @@ import React from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
-const jason = () => {
+const Jason = () => {
   useGSAP(() => {
     gsap.set(".jason", { marginTop: "-70vh" });
 
@@ -82,4 +82,4 @@ const jason = () => {
   );
 };
 
-export default jason;
+export default Jason;
