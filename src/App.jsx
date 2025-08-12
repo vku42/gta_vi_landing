@@ -13,7 +13,7 @@ const App = () => {
       <NavBar />
       <Hero />
       <FirstVideo />
-      <Jason />
+      <jason />
     </main>
   );
 };
