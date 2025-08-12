@@ -2,12 +2,12 @@ import { CardCarousel } from "./CardCarousel";
 
 const Hero = () => {
   const images = [
-    { src: "/images/image1.svg", alt: "Image 1" },
-    { src: "/images/image2.svg", alt: "Image 2" },
-    { src: "/images/image3.svg", alt: "Image 3" },
-    { src: "/images/image4.svg", alt: "Image 4" },
-    { src: "/images/image5.svg", alt: "Image 5" },
-    { src: "/images/image6.svg", alt: "Image 6" },
+    { src: "/images/cat1.webp", alt: "Image 1" },
+    { src: "/images/cat2.webp", alt: "Image 2" },
+    { src: "/images/cat3.webp", alt: "Image 3" },
+    { src: "/images/cat4.webp", alt: "Image 4" },
+    { src: "/images/cat5.webp", alt: "Image 5" },
+    { src: "/images/cat6.webp", alt: "Image 6" },
   ];
 
   return (

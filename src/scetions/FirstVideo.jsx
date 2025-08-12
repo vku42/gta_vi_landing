@@ -48,7 +48,7 @@ const FirstVideo = () => {
           muted
           playsInline
           preload="auto"
-          src="/videos/output1_1.mp4"
+          src="/videos/output1_1.webm"
           className="first-vd"
         />
       </div>
