@@ -72,8 +72,8 @@ const Hero = () => {
       });
   });
   return (
-    <section className="hero-section bg-[#dca927]">
-      <div className="size-full mask-wrapper  ">
+    <section className="hero-section h-screen w-full ">
+      <div className="size-full mask-wrapper bg-[url('/images/bg.svg')] bg-cover bg-center h-screen w-full  ">
         <HeroOne className="scale-out" />
 
         {/* <img src="/images/hero-text.webp" alt="hero-logo" /> */}
@@ -94,7 +94,7 @@ const Hero = () => {
         />
       </div> */}
 
-      <div className="fake-logo-wrapper pointer-events-none ">
+      <div className="fake-logo-wrapper pointer-events-none  ">
         <img src="/images/big-hero-text.svg" className="overlay-logo" />
       </div>
 
