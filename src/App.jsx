@@ -3,7 +3,7 @@ import { ScrollTrigger } from "gsap/all";
 import Hero from "./scetions/Hero";
 import NavBar from "./scetions/NavBar";
 import FirstVideo from "./scetions/FirstVideo";
-import Jason from "./scetions/jason";
+import jason from "./scetions/Jason";
 
 gsap.registerPlugin(ScrollTrigger);
 
