@@ -12,7 +12,7 @@ const Jason = () => {
           trigger: ".jason",
           start: "top 90%",
           end: "10% center",
-          scrub: 2,
+          scrub: 1,
         },
       })
       .to(".first-vd", { opacity: 0, duration: 1, ease: "back.inOut" });
@@ -26,7 +26,7 @@ const Jason = () => {
           end: "80% center",
           scrub: 2,
         },
-        y: -300,
+        y: -100,
         duration: 1,
         ease: "power1.inOut",
       },

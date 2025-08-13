@@ -15,7 +15,7 @@ const Hero = () => {
       {/* Heading Section */}
       {/* Carousel */}
       <div className="mt-1">
-        <div className="flex flex-col justify-center items-center text-center fade-out ">
+        <div className="flex flex-col justify-center items-center text-center  ">
           <div className="flex flex-col gap-1 max-w-4xl">
             <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-[45px] font-bold tracking-tight opacity-85 leading-tight">
               PREMIUM SALWAR SUITS

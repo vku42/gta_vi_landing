@@ -32,14 +32,11 @@ const Hero = () => {
         pin: true,
       },
     });
-    tl.to(".fade-out", {
-      opacity: 0,
+
+    tl.to(".scale-out", {
+      scale: 1,
       ease: "power1.inOut",
     })
-      .to(".scale-out", {
-        scale: 1,
-        ease: "power1.inOut",
-      })
       .to(
         ".mask-wrapper",
         {
